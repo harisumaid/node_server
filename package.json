@@ -12,6 +12,7 @@
         "start": "ts-node src/server.ts",
         "build": "npm run lint && npm run build-ts",
         "serve": "node dist/server.js",
+        "postinstall": "npm run build-ts",
         "watch-node": "nodemon dist/server.js",
         "test": "jest --forceExit --coverage --verbose",
         "watch-test": "npm run test -- --watchAll",
